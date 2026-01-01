@@ -5,6 +5,9 @@ window.onload = function () {
  addTask.onclick=function(){
     let li=document.createElement('li')
     li.innerText=newTask.value
+    let Btn=document.createElement('Btn')
+    Btn.innerText='✖️'
+    li.appendChild(Btn)
     todolist.appendChild(li)
  }
 
