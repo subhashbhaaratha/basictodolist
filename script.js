@@ -9,6 +9,9 @@ window.onload = function () {
     Btn.innerText='✖️'
     li.appendChild(Btn)
     todolist.appendChild(li)
+    Btn.onclick=function(event){
+        event.target.parentElement.remove()
+    }
  }
 
 
